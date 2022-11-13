@@ -3,7 +3,20 @@ from utils.Layers import MLP, PatchEmbedding
 
 
 class FocalModulate(Module):
-
+    
+    r"""
+    
+    Focal Modulation Layer as proposed in https://arxiv.org/pdf/2203.11926.pdf
+    
+    Args:
+        dims: dimension of input
+        levels: number of focal levels
+        k_s: first context kernel size
+        dp: drop out rate
+        nl: non-linearity function
+    
+    """
+    
     def __init__(self, dims: int, levels: int, k_s: int = 3, dp: float = 0., nl=nn.GELU()):
         super().__init__()
 
