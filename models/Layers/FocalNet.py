@@ -19,8 +19,6 @@ class FocalModulate(Module):
     def forward(self, x: Tensor) -> Tensor:
         b, h, w, c = x.shape
 
-        #x = x.permute(0, 2, 3, 1)
-
         q, z, gates = self.proj(x).permute(0, 3, 1, 2).split((self.dims, self.dims, self.levels+1), 1)
 
         modulator: Tensor = torch.zeros((b, self.dims, h, w))
