@@ -2,7 +2,11 @@
 
 * Utilizes a mechanism called Focal Modulation to compute dependencies across tokens
    as replacement to the conventional Self Attention mechanism.
-* Added benefit of translation invariance due to fixed query token.
+
+* Added benefit of translation invariance due to fixed query token so no need to add positional information.
+
+* Very interpertable
+
 * It achieves state-of-the-art results in object detection tasks.
   * Outperforms previous MSA based architectures such as Swin
 
