@@ -7,7 +7,7 @@
 
 * Very interpertable
 
-* It achieves state-of-the-art results in object detection tasks.
+* It achieves state-of-the-art results most prominent in object detection tasks.
   * Outperforms previous MSA based architectures such as Swin
 
 # Paper
