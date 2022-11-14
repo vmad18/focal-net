@@ -7,4 +7,5 @@
   * Outperforms previous MSA based architectures such as Swin
 
 # Paper
-* FocalNets: Focus Eyes with Focal Modulation - https://arxiv.org/pdf/2203.11926.pdf
+* FocalNets: Focus Eyes with Focal Modulation
+   * https://arxiv.org/pdf/2203.11926.pdf
